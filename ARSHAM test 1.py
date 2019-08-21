@@ -40,9 +40,8 @@ for x in x_array:
         xx.append(x)
         yy.append(y)
         zz.append(dff[x][y])
-        ax.plot_trisurf(xx, yy, zz,
-                cmap='Spectral', edgecolor='none')
-
+#plots the dataframe in 3D
+ax.plot_trisurf(xx, yy, zz,cmap='Spectral', edgecolor='none')
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
